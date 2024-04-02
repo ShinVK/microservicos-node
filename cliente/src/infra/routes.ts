@@ -3,7 +3,7 @@ import { CreateCustomerController } from '../modules/create-client/create-client
 
 const router = Router();
 
-router.post("/customers", (request, reponse) => {
+router.post("/customer", (request, response) => {
   new CreateCustomerController().handle(request, response)
 })
 

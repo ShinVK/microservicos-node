@@ -18,6 +18,7 @@ model Client {
   name String
   email String @unique
   password String
+  document String
   phone String
 
   @@map("clients")
