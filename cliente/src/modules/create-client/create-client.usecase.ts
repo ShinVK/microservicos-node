@@ -1,4 +1,5 @@
 import { prismaClient } from '../../infra/database/prismaClient'
+import { kafka } from '../../infra/provider/kafka'
 
 type CreeateClientRequest = {
   name: string,
@@ -27,6 +28,8 @@ export class CreateClientUseCase {
         ...data
       }
     })
+
+    kafka.
 
     return customerCreated
   }
